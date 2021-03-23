@@ -12,10 +12,11 @@ print(
     """)
 
 
-num = int(input("Enter an integer number: "))
-if num != secret_number:
+
+while True:
+    num = int(input("Enter an integer number: "))
+    if num == secret_number:
+        break
     print("Ha ha! You're stuck in my loop!")
-    while True:
-        input("")
-else:
-    print("Well done, muggle! You are free now.")
+
+print("Well done, muggle! You are free now.")
